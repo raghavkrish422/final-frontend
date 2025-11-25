@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 20% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 91% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 20% 94%;
+    --muted-foreground: 231 15% 48%;
+
+    --accent: 217 91% 92%;
+    --accent-foreground: 217 91% 35%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 20% 88%;
+    --input: 217 20% 88%;
+    --ring: 217 91% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 221 39% 19%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 217 91% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 221 39% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 221 39% 25%;
+    --sidebar-ring: 217 91% 35%;
+
+    --card-gradient-from: 217 91% 40%;
+    --card-gradient-to: 217 91% 30%;
+    
+    --info-box-bg: 240 30% 96%;
+    --action-button-bg: 217 91% 45%;
+    --action-button-hover: 217 91% 35%;
+  }
+
+  .dark {
+    --background: 207 73% 20%;
+    --foreground: 0 0% 100%;
+
+    --card: 221 39% 19%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 221 39% 19%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 217 91% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 91% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 221 39% 25%;
+    --muted-foreground: 231 20% 70%;
+
+    --accent: 221 39% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 221 39% 25%;
+    --input: 221 39% 25%;
+    --ring: 217 91% 35%;
+    
+    --sidebar-background: 221 39% 19%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 217 91% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 221 39% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 221 39% 25%;
+    --sidebar-ring: 217 91% 35%;
+    
+    --card-gradient-from: 217 91% 40%;
+    --card-gradient-to: 217 91% 30%;
+    
+    --info-box-bg: 221 39% 22%;
+    --action-button-bg: 217 91% 45%;
+    --action-button-hover: 217 91% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
